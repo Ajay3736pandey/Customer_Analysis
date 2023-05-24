@@ -41,12 +41,12 @@ def segment_customers(input_data):
 
 def main():
     
-    Income = st.text_input("Type In The Household Income")
-    Kidhome = st.radio ( "Select Number Of Kids In Household", ('0', '1','2') )
-    Teenhome = st.radio ( "Select Number Of Teens In Household", ('0', '1','2') )
-    Age = st.slider ( "Select Age", 18, 85 )
-    Partner = st.radio ( "Livig With Partner?", ('Yes', 'No') )
-    Education_Level = st.radio ( "Select Education", ("Undergraduate", "Graduate", "Postgraduate") )
+    Income = st.sidebar.text_input("Type In The Household Income")
+    Kidhome = st.sidebar.radio ( "Select Number Of Kids In Household", ('0', '1','2') )
+    Teenhome = st.sidebar.radio ( "Select Number Of Teens In Household", ('0', '1','2') )
+    Age = st.sidebar.slider ( "Select Age", 18, 85 )
+    Partner = st.sidebar.radio ( "Livig With Partner?", ('Yes', 'No') )
+    Education_Level = st.sidebar.radio ( "Select Education", ("Undergraduate", "Graduate", "Postgraduate") )
     
     result = ""
     
